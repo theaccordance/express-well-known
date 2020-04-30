@@ -1,7 +1,6 @@
 # Express Middleware for Well-Known URIs
 
-![Build](https://github.com/theaccordance/express-well-known/workflows/Build/badge.svg?branch=master)
-[![Coverage Status](https://coveralls.io/repos/github/theaccordance/express-well-known/badge.svg)](https://coveralls.io/github/theaccordance/express-well-known)
+![build](https://github.com/theaccordance/express-well-known/workflows/build/badge.svg)[![Coverage Status](https://coveralls.io/repos/github/theaccordance/express-well-known/badge.svg)](https://coveralls.io/github/theaccordance/express-well-known)
 [![CodeFactor](https://www.codefactor.io/repository/github/theaccordance/express-well-known/badge)](https://www.codefactor.io/repository/github/theaccordance/express-well-known)
 ![npm latest version](https://img.shields.io/npm/v/express-well-known/latest)
 [![Known Vulnerabilities](https://snyk.io/test/github/theaccordance/express-well-known/badge.svg?targetFile=package.json)](https://snyk.io/test/github/theaccordance/express-well-known?targetFile=package.json)
