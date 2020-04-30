@@ -71,3 +71,7 @@ app.use(wellKnown);
 ### registerURIs(Manifest)
 
 returns an express router to mount containing all the well-known resources
+
+## References
+
+- [IETF RFC8615](https://tools.ietf.org/html/rfc8615)
