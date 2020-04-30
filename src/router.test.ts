@@ -5,7 +5,7 @@ import supertest from "supertest";
 
 describe("registerURIs", () => {
   it("Export exists", () => expect(registerURIs).not.toBeUndefined());
-  it("works", (done) => {
+  it("Returns claims for a given resource", (done) => {
     const app = express();
     const manifest = { pkg };
 
@@ -21,6 +21,25 @@ describe("registerURIs", () => {
           throw err;
         }
         expect(JSON.parse(res.text)).toEqual(pkg);
+        done();
+      });
+  });
+  it("Returns a list of resource paths", (done) => {
+    const app = express();
+    const manifest = { pkg };
+
+    const wellKnown = registerURIs(manifest);
+
+    app.use(wellKnown);
+
+    return supertest(app)
+      .get("/.well-known/")
+      .expect(200)
+      .end((err, { text }) => {
+        if (err) {
+          throw err;
+        }
+        expect(JSON.parse(text)).toEqual({ resources: ["/.well-known/pkg"] });
         done();
       });
   });
