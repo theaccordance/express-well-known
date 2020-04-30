@@ -1,0 +1,1 @@
+export { registerURIs } from "./router";
