@@ -1,6 +1,6 @@
 {
   "name": "express-well-known",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Well-Known Uniform Resource Identifiers",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
